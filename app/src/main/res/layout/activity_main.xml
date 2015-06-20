@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:hint="userName / oldNameToReplace" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="password / newNameToUpdate" />
+
+    <Button
+        android:id="@+id/btn_add_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:onClick="addUser"
+        android:text="Add User" />
+
+    <Button
+        android:id="@+id/btn_view_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="viewData"
+        android:text="View Data" />
+
+
+    <Button
+        android:id="@+id/btn_getDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="getData"
+        android:text="GET DETAIL" />
+
+    <EditText
+        android:id="@+id/et_getDetail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:hint="enter name here to retreive or delete" />
+
+
+    <Button
+        android:id="@+id/btn_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:onClick="updateData"
+        android:text="UPDATE data" />
+
+    <Button
+        android:id="@+id/btn_delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="deleteData"
+        android:text="DELete data" />
+
+</LinearLayout>
